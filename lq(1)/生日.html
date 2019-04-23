@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>唔~</title>
+    <link href="css/h0304.css"  type="text/css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            font-size: 10px;
+            background-color: pink;
+        }
+        #box{
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+        }
+        #l{
+            left: 0;
+            bottom: 0;
+        }
+        #j{
+            left: 0;
+            top:0;
+        }
+        #k{
+            right: 0;
+            bottom: 0;
+        }
+        #f{
+            right: 0;
+            top: 0;
+        }
+        img{
+
+            width: 240px;
+            height: 240px;
+            position: absolute;
+        }
+        #beij{
+            position: absolute;
+            bottom: 240px;
+            right: 240px;
+            background:url('b1.jpg') no-repeat ;
+            background-size: 100% 100%;
+        }
+        #t{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 0 240px 0 240px;
+            line-height: 240px;
+            text-align: center;
+            height: 240px;
+            font-size: 2rem;
+            font-style: italic;
+
+        }
+        #top-c{
+            height: 240px;
+            position: absolute;
+            left: 240px;
+            top:0;
+            background: url("timg.jpg") no-repeat;
+            background-size: 100% 100%;
+            /*background-color: red;*/
+            z-index: 999;
+        }
+        #auto{
+            padding: 2rem;
+            font-size: 3rem;
+            font-style: italic;
+        }
+        @keyframes hd1 {
+            0% {
+                opacity: 0;
+                left: 0;
+                top: 0;
+            }
+            17% {
+                opacity: 1;
+                left: 0;
+                top: 240px
+            }
+        }
+
+        @keyframes hd2 {
+            0%{
+                opacity: 0;
+                left: 0;
+                top: 0;
+            }
+            17%{
+                opacity: 0;
+                left: 0;
+                top:240px
+            }
+            34%{
+                opacity: 1;
+                left: 0;
+                top:480px
+            }
+
+        }
+        @keyframes hd3 {
+            0%{
+                opacity: 0;
+                left: 0;
+                top: 0;
+            }
+            34%{
+                opacity: 0;
+                left: 0;
+                top:480px
+            }
+            51%{
+                opacity: 1;
+                left: 0;
+                top: 720px;
+            }
+        }
+        @keyframes hd4 {
+            0% {
+                opacity: 0;
+                left: 0;
+                top: 0;
+            }
+
+            51% {
+                opacity: 0;
+                left: 0;
+                top: 720px;
+            }
+            68% {
+                opacity: 1;
+                left: 0;
+                top: 960px;
+            }
+        }
+        @keyframes hd5 {
+            0% {
+                opacity: 0;
+                left: 0;
+                top: 0;
+            }
+            68% {
+                opacity: 0;
+                left: 0;
+                top: 960px;
+            }
+            85% {
+                opacity: 1;
+                left: 0;
+                top: 1200px;
+            }
+        }
+        @keyframes hd6 {
+            0%{
+                opacity: 0;
+                left: 0;
+                top: 0;
+            }
+            85%{
+                opacity: 0;
+                left: 0;
+                top: 1200px;
+            }
+            100%{
+                opacity: 1;
+                left: 0;
+                top: 1440px;
+            }
+        }
+        @keyframes yb1 {
+            0% {
+                opacity: 0;
+                right: 0;
+                top: 0;
+            }
+            17% {
+                opacity: 1;
+                right: 0;
+                top: 240px
+            }
+        }
+
+        @keyframes yb2 {
+            0%{
+                opacity: 0;
+                right: 0;
+                top: 0;
+            }
+            17%{
+                opacity: 0;
+                right: 0;
+                top:240px
+            }
+            34%{
+                opacity: 1;
+                right: 0;
+                top:480px
+            }
+
+        }
+        @keyframes yb3 {
+            0%{
+                opacity: 0;
+                right: 0;
+                top: 0;
+            }
+            34%{
+                opacity: 0;
+                right: 0;
+                top:480px
+            }
+            51%{
+                opacity: 1;
+                right: 0;
+                top: 720px;
+            }
+        }
+        @keyframes yb4 {
+            0% {
+                opacity: 0;
+                right: 0;
+                top: 0;
+            }
+
+            51% {
+                opacity: 0;
+                right: 0;
+                top: 720px;
+            }
+            68% {
+                opacity: 1;
+                right: 0;
+                top: 960px;
+            }
+        }
+        @keyframes yb5 {
+            0% {
+                opacity: 0;
+                right: 0;
+                top: 0;
+            }
+            68% {
+                opacity: 0;
+                right: 0;
+                top: 960px;
+            }
+            85% {
+                opacity: 1;
+                right: 0;
+                top: 1200px;
+            }
+        }
+        @keyframes yb6 {
+            0%{
+                opacity: 0;
+                right: 0;
+                top: 0;
+            }
+            85%{
+                opacity: 0;
+                right: 0;
+                top: 1200px;
+            }
+            100%{
+                opacity: 1;
+                right: 0;
+                top: 1440px;
+            }
+        }
+        #beij a{
+            opacity: 1;
+            font-size: 3rem;
+            font-style: italic;
+            color: red;
+            float: right;
+            animation: a 25s linear;
+        }
+        @keyframes a {
+            0%,95%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<audio src="b3.m4a"  autoplay="autoplay" loop="loop"  ></audio>
+
+<div id="box">
+    <div id="top-c"></div>
+    <img src="hy.jpg" id="l" >
+    <img src="hy2.jpg" id="f" >
+    <img src="hy3.jpg" id="j">
+    <img src="hy4.jpg" id="k">
+    <div id="beij">
+        <div id="auto"></div>
+        <a style="color：red" href="shengri1.html">点我！！！</a>
+    </div>
+    <div id="t"></div>
+
+</div>
+<script src="js/JSON.js"></script>
+<script>
+    var timer3 =null,timer4 = null;
+    var w = client().width - 480;
+    var h = client().height - 480;
+    console.log(w,h);
+    var z =parseInt(h / 240);
+    var zy = h  - z * 240;
+    zy = zy / z;
+    var t = 0;
+    var end,be = 0;
+    $('top-c').style.width = w + 'px';
+    for(var p = 0;p < z ;p++){
+        (function () {
+            var img = document.createElement("img");
+            img.src = p+1 +".jpg";
+            img.style.animation = "hd"+ (p+1)+" 30s linear";
+            img.style.top = (zy+240) * (p+1)  + 'px';
+            $('box').insertBefore(img,document.getElementsByTagName('img')[0]);
+        })(p)
+    }
+
+    pp = p;
+    for( p=p+1;p < (z*2+1);p++)
+    {
+        var img1 = document.createElement("img");
+        img1.src = p +".jpg";
+        $('box').insertBefore(img1,document.getElementsByTagName('img')[0]);
+        img1.style.top = (zy+240) * (p-pp) + 'px';
+        img1.style.animation = "yb"+ (p-pp)+" 30s linear";
+        img1.style.right = 0;
+    }
+
+    $('beij').style.width = w + 'px';
+    $('beij').style.height = h + 'px';
+    $('t').style.width = w  + 'px';
+
+    //想说的话
+    str = "";
+    //遍历字符串
+    jj = 0;
+    var thier = null;
+
+    //时间定时器
+    var last = new Date("1999-04-30 00:00:00");
+    var mslast = last.getTime();
+    setInterval(function () {
+        var now = new Date();
+        var msnow = now.getTime();
+        var msall = msnow - mslast;
+        var sall = parseInt(msall / 1000);
+        var d = size(parseInt(sall / 3600 / 24));
+        var h = size(parseInt(sall / 3600 % 24));
+        var m = size(parseInt(sall / 60 % 60));
+        var s = size(parseInt(sall % 60));
+        document.getElementById("t").innerText = "距出生到现在已经" + d + "天" + h + "小时" + m + "分钟" + s + "秒钟";
+    }, 1000);
+
+    function size(num) {
+        return num >= 10 ? num : '0' + num;
+
+    }
+    //延迟字出现
+    thier = setInterval(function () {
+        auto();
+        clearInterval(thier)
+    } ,2000);
+
+    function auto(){
+        var divTyping = document.getElementById('auto');
+        if (jj <= str.length) {
+            divTyping.innerHTML = str.slice(0, jj++) + '_';
+            setTimeout('auto()', 150);//递归调用
+        }
+
+    }
+</script>
+</body>
+</html>
